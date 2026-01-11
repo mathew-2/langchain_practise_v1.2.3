@@ -10,3 +10,5 @@ So I have explored the following topics
     - Streaming helps see the chat as llm produces the certain chunk at inference time instead of seeing at as a whole at the end
     - batching helps process multiple requests at once parallely and we can set a limit as to how many parallel must be taken at a time
 - Tool creation
+    - Here we can directly bind the tool with the certain model or we can use the **create_agent** module and it will automatically bind the tool with the model
+- Tool Execution
