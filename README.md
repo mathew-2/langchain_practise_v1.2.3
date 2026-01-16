@@ -36,7 +36,33 @@ So I have explored the following topics
             )
         ```
 
-        - We can also set a way to use tools
+        - We can also set a way to use tools message
+        ```python
+        ai_message = AIMessage(
+            [],
+            tool_calls = [{
+                "name":"get_weather",
+                "args":{"location":"san francisco"},
+                "id":"call_123"
+            }]
+        )
+
+        weather_res = "BRRR its chilly"
+        tool_resp = ToolMessage(
+            content=weather_res,
+            tool_call_id = "call_123"
+        )
+
+        messages = [
+            HumanMessage("what is the weather like in san francisco"),
+            ai_message,
+            tool_resp
+        ]
+        ```
+
+
 - Model response with structured output 
     - Pydantic 
+        - We can set a structure for which fields the output needs to have and how the output looks like .Here field validation will also happen .
     - TypeDict
+        - Here instead of giving the response in a class manner we will be giving in a dictionary manner. So this is also giving in a structured output manner
