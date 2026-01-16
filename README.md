@@ -18,19 +18,25 @@ So I have explored the following topics
         - Types of messages that we can use in the list of messages SystemMessage,HumanMessage,AIMessage,ToolMessage
         - We can usually invoke a list of these in the follow manner
         ex. 
+        ```python
         messages = [
             SystemMessage(content="""You are a  model that says "yo u fine as hell" randomly in a convo """),
             HumanMessage(content="What is the capital of India?"),
         ]
 
         response = model.invoke(messages)
+        ```
 
         - We can also set metadata for a certain message used
+        ```python
         human_msg = HumanMessage(
                 content="Hello there!",
                 name= "Mathiastobias", # Optional this is to track the name of the user
                 id = "message_1234" # Optional this is used to track the message
             )
+        ```
+
+        - We can also set a way to use tools
 - Model response with structured output 
     - Pydantic 
     - TypeDict
