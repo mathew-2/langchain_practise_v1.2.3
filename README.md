@@ -5,6 +5,8 @@ In this repo I am capturing all the little learnings I have looked into in the l
 So I have explored the following topics 
 
 - Basic use of create_agent function
+![inital use of agents in langchian](images/output.png)
+    - Really love how you can make this image using langchain (more on middleware version of it later on)
 - Model Integration
 - Streaming and Batching
     - Streaming helps see the chat as llm produces the certain chunk at inference time instead of seeing at as a whole at the end
@@ -15,7 +17,7 @@ So I have explored the following topics
 - Types of Messages
     - We can invoke a **simple text prompt** ex model.invoke("what sort of model are you again ,give me a brief overview")
     - We can invoke a list of messages 
-        - Types of messages that we can use in the list of messages SystemMessage,HumanMessage,AIMessage,ToolMessage
+        - Types of messages that we can use in the list of messages **SystemMessage ,HumanMessage ,AIMessage ,ToolMessage**
         - We can usually invoke a list of these in the follow manner
         ex. 
         ```python
@@ -43,14 +45,14 @@ So I have explored the following topics
             tool_calls = [{
                 "name":"get_weather",
                 "args":{"location":"san francisco"},
-                "id":"call_123"
+                "id":"call_123"# both the call id must match
             }]
         )
 
         weather_res = "BRRR its chilly"
         tool_resp = ToolMessage(
             content=weather_res,
-            tool_call_id = "call_123"
+            tool_call_id = "call_123"# both the call id must match
         )
 
         messages = [
