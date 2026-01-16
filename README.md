@@ -5,7 +5,9 @@ In this repo I am capturing all the little learnings I have looked into in the l
 So I have explored the following topics 
 
 - Basic use of create_agent function
+
 ![inital use of agents in langchian](images/output.png)
+
     - Really love how you can make this image using langchain (more on middleware version of it later on)
 - Model Integration
 - Streaming and Batching
