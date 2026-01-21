@@ -70,3 +70,8 @@ So I have explored the following topics
         - We can set a structure for which fields the output needs to have and how the output looks like .Here field validation will also happen .
     - TypeDict
         - Here instead of giving the response in a class manner we will be giving in a dictionary manner. So this is also giving in a structured output manner
+
+- Middleware stuff
+
+    ![agent with middleware layer](images/middleware_add.png)
+
