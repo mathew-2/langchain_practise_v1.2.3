@@ -74,4 +74,5 @@ So I have explored the following topics
 - Middleware stuff
 
     ![agent with middleware layer](images/middleware_add.png)
+    - This is to ensure security at each and every checkpoint
 
