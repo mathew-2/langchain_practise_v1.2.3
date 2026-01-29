@@ -74,5 +74,7 @@ So I have explored the following topics
 - Middleware stuff
 
     ![agent with middleware layer](images/middleware_add.png)
-    - This is to ensure security at each and every checkpoint
+    - This is to ensure security at each and every checkpoint and there are alot of middleware checkpoints implemented
+    - only summarization and human in the loop middleware was shown tho 
+    - As far as i know only properly implemented with openai with other opensource models its not clear how to do this
 
